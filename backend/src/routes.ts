@@ -25,3 +25,7 @@ routes.post("/feedbacks", async (req, res) => {
 
     return res.status(201).send()
 })
+
+routes.get("/health", (req, res) => {
+    res.sendStatus(200)
+})
