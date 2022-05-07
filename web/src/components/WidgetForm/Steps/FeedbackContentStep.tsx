@@ -23,7 +23,7 @@ export function FeedbackContentStep({feedbackType, onFeedbackRestartRequested, o
         event.preventDefault()
         setIsSendingFeedback(true)
         try {
-            await api.post('/feedbacks', {
+            await api.post('/feedback', {
                 type: feedbackType,
                 comment,
                 screenshot,
